@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Scoreboard</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src = "scoreScript.js"></script>
+</head>
+
+<body onload="init()">
+
+    <h1>Scoreboard</h1>
+    <!--Table of players-->
+    <table id="scoreTable">
+        <tr>
+            <th id="headings">Name</th>
+            <th id="headings">Points</th>
+        </tr>
+        <tr id="0">
+            <th> Riku Heino</th>
+            <td id="score1"></td>
+        </tr>
+        <tr id="1">
+            <th> Ville Vallaton</th>
+            <td id="score2"></td>
+        </tr>
+        <tr id="2">
+            <th> Johnnie Walker</th>
+            <td id="score3"></td>
+        </tr>
+        <tr id="3">
+            <th> Jaska Jokunen</th>
+            <td id="score4"></td>
+        </tr>
+
+    </table>
+
+    <!--List of input forms-->
+    <label>Give score to Riku Heino     <input type="number" id="addScore1"></label><br>
+    <label>Give score to Ville Vallaton <input type="number" id="addScore2"></label><br>
+    <label>Give score to Johnnie Walker <input type="number" id="addScore3"></label><br>
+    <label>Give score to Jaska Jokunen  <input type="number" id="addScore4"></label><br>
+
+    <!--Buttons-->
+    <button type="button" onclick="addScore()">Add scores</button>
+    <button type="button" onclick="init()">Reset scores</button>
+</body>
+
+</html>
